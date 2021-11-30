@@ -2,10 +2,7 @@ body{
 	margin: 0;
 	padding: 0;
 }
-.body{
-	background-image: url("images/body1.jpg");
-	min-width: 1200px;
-}
+
 @import url('https://fonts.googleapis.com/css2?family=Estonia&display=swap');
 .col-header{
 	background-image: url("images/header.jpg");
@@ -15,6 +12,7 @@ body{
 	
 }
 .col-mainhead p{
+	padding: 12px;
 	color: white;
 	margin-left: 50px;
 	display: inline-block;
@@ -33,13 +31,16 @@ body{
 }
 .col-nav{
 	min-width: 1200px;
+	
+	
+	overflow: hidden;
 }
 .col-nav ul{
 	padding: 0;
 	margin: 0;
 	background-color: bisque;
+	background-attachment: fixed;
 	text-align:center;
-	
 	
 }
 .col-nav ul li{
@@ -56,11 +57,58 @@ body{
     transform: translate(-30px,0px);
 	background-color: bisque;
 }
+.body{
+	/* background-image: url("images/body1.jpg") ; */
+	background: linear-gradient(to bottom right, #00ff99 0%, #ffffff 50%);
+
+	/* height: 100%; */
+	text-align: center;
+	min-width: 1200px;
+  	/* background-size: cover;
+	text-align: center; */
+	margin: 0;
+	padding: 0;
+
+}
+
+.left-body,.right-body{
+	color: red;
+	display: inline-block;
+	width: 250px;
+	border: 0px;
+	padding: 5px;
+	margin-right: 50px;
+	margin-left:50px;
+	background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4)
+}
+.col-body-txt1,.col-body-txt1{
+	text-decoration: underline;
+    text-align: center;
+	color: greenyellow;
+}
+.col-body-txt2,.col-body-txt2{
+	
+	overflow: hidden;
+	white-space: nowrap;
+	
+    text-align: center;
+	font-weight: bold;
+	color: black;
+	margin-bottom:20px ;
+	animation: txt-eff 2s;
+
+}
+@keyframes txt-eff {
+	from { transform: scale(0,0); }
+    to { transform: scale(1,1); }
+}
 
 
 .col-info{
 	text-align: center;
 	min-width: 1200px;
+	background: linear-gradient(to top, #3399ff -6%, #ffffff 78%);
 }
 .card{
 
