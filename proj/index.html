@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            margin-top: 40px;
+            width: 300px;
+            background-image: url("images/header.jpg");
+            border-radius: 10px;
+            border: 2px solid rgb(3, 3, 3);
+            display: inline-block;
+            overflow: hidden;
+            animation: effect 3s; 
+            
+        }
+        @keyframes effect {
+            0%{transform: scale(0, 1);}
+        }
+        .card-img{
+            display: block;
+            margin: auto;
+            margin-top: -45px;
+            border-radius: 50%;
+            
+            transition: 1s;
+            width: 100px;
+            height: 100px;
+            box-sizing: border-box;
+            animation: effect-img 2.5s;
+            
+        }
+        @keyframes effect-img {
+            0%{transform:rotate(720deg);}
+        }
+        .card-img:hover,.card-btn.active{
+
+            transform:rotate(360deg);
+        }
+        .card-body{
+            padding: 8px;
+            text-align: center;
+            
+        }
+        .card-header{
+            text-decoration: underline;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 0;
+
+        }
+        .card-para{
+            margin-bottom: 0;
+            color: #f011ad; 
+
+        }
+        .card-btn{
+            
+            margin: 0px 0px 10px -10px;
+            padding: 5px;
+            border:0;
+            background-color: #0a1e54;
+            font-size: 9px;
+            font-weight: lighter;
+            color: white;
+            display: block;
+            /* margin: auto; */
+            margin-bottom: -20px;
+            margin-left: 269px;
+            border-radius: 50%;
+            transition: 1s;
+            animation: effect-btn 3s;
+            
+        }
+        @keyframes effect-btn {
+            0%{transform:rotate(720deg);}
+        }
+        .card-btn:hover{
+            transform:rotate(720deg);
+        }
+        .card-btn a{
+            text-decoration: none;
+            color:#fbff07
+        }
+    </style>
+</head>
+<body>
+    <div class="card" style="overflow: visible;">
+    <img src="images/body.jpg"   alt="linus torvalds" class="card-img">
+    <div class="card-body" >
+        
+    <p class="card-header">Header</p>
+    <p class="card-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis porro eveniet magni veritatis vel deserunt, odio dolores odit iure, soluta, sint provident a labore in alias consectetur. Et, mollitia labore.</p>
+    <button class="card-btn" ><a href="#">Read More</a></button>
+</div></div>
+</body>
+</html>
