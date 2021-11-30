@@ -80,7 +80,8 @@ body{
 	margin-right: 50px;
 	margin-left:50px;
 	background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.4)
+    	background-color: rgba(0,0,0, 0.4);
+	border-radius:13px;
 }
 .col-body-txt1,.col-body-txt1{
 	text-decoration: underline;
